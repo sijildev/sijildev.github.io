@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Portfolio of Sijil" />
+    <title>Sijil - Portfolio</title>
+    <link rel="shortcut icon" href="./assets/images/logo2.png" />
+    <link rel="stylesheet" href="/styles/styles.css" />
+    <script type="module" src="./javascript/index.js"></script>
+    <script async src="https://cdn.splitbee.io/sb.js"></script>
+  </head>
+
+  <body>
+    <div id="loader" class="zoomIn">
+      <div class="spinner-box">
+        <div class="blue-orbit leo"></div>
+
+        <div class="green-orbit leo"></div>
+
+        <div class="red-orbit leo"></div>
+
+        <div class="white-orbit w1 leo"></div>
+        <div class="white-orbit w2 leo"></div>
+        <div class="white-orbit w3 leo"></div>
+      </div>
+    </div>
+
+    <div id="container">
+      <!-- <div class="cursor">
+        <div class="cursor__border"></div>
+      </div> -->
+
+      <nav class="nav">
+        <div class="wrapper">
+          <section class="nav__mobile">
+            <a href="#hero"></a>
+            <aside class="nav__hamburger">
+              <i class="nav__hamburger-icon fa-solid fa-bars"></i>
+              <i class="nav__hamburger-close fa-solid fa-xmark"></i>
+            </aside>
+          </section>
+
+          <section class="nav__desktop">
+            <aside>
+              <a href="#hero"
+                ></a>
+            </aside>
+            <section class="nav__desktop-links">
+              <a class="desktop-hero active-link link hidden fromTop" href="#hero"
+                ><i class="fa-solid fa-house"></i> Home</a
+              >
+              <a class="desktop-projects link hidden fromTop" href="#projects"
+                ><i class="fa-solid fa-diagram-project"></i> Samples</a
+              >
+              <a class="desktop-skills link hidden fromTop" href="#skills"><i class="fa-solid fa-code"></i> Skills</a>
+            </section>
+            <article class="nav__desktop-socials">
+              <a
+                class="link hidden fromTop"
+                href="https://github.com/sijildev"
+                target="_blank"
+                aria-label="Github"
+                title="Github"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </article>
+          </section>
+        </div>
+      </nav>
+
+      <aside class="sidebar-mobile">
+        <ul class="sidebar-mobile__list">
+          <li>
+            <a class="sidebar-mobile__item mobile-hero active-link" href="#hero"
+              ><i class="fa-solid fa-house"></i> Home</a
+            >
+          </li>
+          <li>
+            <a class="sidebar-mobile__item mobile-projects" href="#projects"
+              ><i class="fa-solid fa-diagram-project"></i> Projects</a
+            >
+          </li>
+          <li>
+            <a class="sidebar-mobile__item mobile-skills" href="#skills"><i class="fa-solid fa-code"></i> Skills</a>
+          </li>
+          <li>
+            <a class="sidebar-mobile__item" href="https://github.com/sijildev" target="_blank"
+              ><i class="fa-brands fa-github"></i> Github</a
+            >
+          </li>
+          <li>
+            <a class="sidebar-mobile__item mobile-contact" href="#contact"
+              ><i class="fa-solid fa-address-card"></i> Contact</a
+            >
+          </li>
+          <li>
+            <a class="sidebar-mobile__item mobile-contact" href="./assets/cv.pdf" target="_blank"
+              ><i class="fa-solid fa-file"></i> Resume</a
+            >
+          </li>
+        </ul>
+      </aside>
+
+      <main>
+        <section class="landing">
+          <img src="./assets/images/background.png" class="background" alt="" />
+          <img src="./assets/images/foreground.png" class="foreground" alt="" />
+
+          <div class="hero-container" id="hero">
+            <div class="wrapper">
+              <section class="hero">
+                <section class="hero__left">
+                  <section class="hero__heading-background prevent-select link hidden fromTop">
+                    <h1 class="hero__heading">Hi, I'm Sijil.</h1>
+                  </section>
+                  <div id="typed-strings">
+                    <p>A <span class="hero__fullstack">Fullstack</span> Roblox Dev</p>
+                    <p>A <span class="hero__frontend">Frontend</span> Roblox Dev</p>
+                    <p>A <span class="hero__backend">Backend</span> Roblox Dev</p>
+                    <p>Your <span class="hero__next">Next</span> Team Member</p>
+                  </div>
+                  <div class="typed-container prevent-select link hidden fromTop">
+                    <span id="typed"></span>
+                  </div>
+                  <p class="hero__paragraph link hidden fromTop">
+                    A full stack Roblox developer who is passionate about creating beautiful, functional and responsive
+                    systems
+                  </p>
+                  <a href="#contact" class="hero__contact-btn">
+                  </a>
+                </section>
+                <article class="hero__right">
+                  <img class="hero__astronaut" src="./assets/images/astronaut.svg" alt="" />
+                </article>
+              </section>
+            </div>
+          </div>
+        </section>
+
+        <div class="container-projects">
+          <div class="wrapper">
+            <section class="projects" id="projects">
+              <h2 class="projects__heading">Code Samples</h2>
+              <article class="projects__project hidden fromRight">
+                <article class="projects__laptop-mockup">
+                  <video disableRemotePlayback muted autoplay playsinline>
+                    <source
+                      src="./assets/images/DBMS.PNG"
+                      type='video/webm;codecs="vp9"'
+                      onerror="fallback(parentNode);
+                  function fallback(video) {;
+                    while (video.hasChildNodes()) {
+                      if (video.firstChild instanceof HTMLSourceElement) video.removeChild(video.firstChild);
+                      else video.parentNode.insertBefore(video.firstChild, video);
+                    }
+                    video.parentNode.removeChild(video);
+                  }"
+                    />
+                    <img src="./assets/images/DBMS.PNG" alt="rsduel" loading="lazy" />
+                  </video>
+                </article>
+                <section class="projects__info">
+                  <h3 class="projects__title">Database Management System (DBMS)</h3>
+                  <p class="projects__paragraph">
+                    A clean, secure database management system supporting data creation and manipulation utlizing DataStoreService.
+                  </p>
+                  <section class="all-skills__icons all-skills__icons--small">
+                    <section class="all-skills__container">
+                      <article class="all-skills__icon ts">
+                        <img src="./assets/images/icons/rojo.svg" alt="typescript" loading="lazy" />
+                      </article>
+                      <p>ROJO</p>
+                    </section>
+                    <section class="all-skills__container">
+                      <article class="all-skills__icon react">
+                        <img src="./assets/images/icons/vscode.svg" alt="react" loading="lazy" />
+                      </article>
+                      <p>VSCode</p>
+                    </section>
+                  </section>
+                </section>
+              </article>
+              <article class="projects__project projects__project--reverse hidden fromLeft">
+                <article class="projects__laptop-mockup">
+                  <video disableRemotePlayback muted autoplay playsinline>
+                    <source
+                      src="./assets/images/admin.PNG"
+                      type="video/webm"
+                      onerror="fallback(parentNode);
+                    function fallback(video) {;
+                  while (video.hasChildNodes()) {
+                    if (video.firstChild instanceof HTMLSourceElement) video.removeChild(video.firstChild);
+                    else video.parentNode.insertBefore(video.firstChild, video);
+                  }
+                  video.parentNode.removeChild(video);
+                }"
+                    />
+                    <img src="./assets/images/admin.PNG" alt="tweeter" loading="lazy" />
+                  </video>
+                </article>
+                <section class="projects__info tweeter">
+                  <h3 class="projects__title">Admin Panel Framework</h3>
+                  <p class="projects__paragraph">
+                    A clean admin panel framework utilizing the Roblox Ban API and supporting global events such as admin abuse.
+                  </p>
+                  <section class="all-skills__icons all-skills__icons--small">
+                    <section class="all-skills__container">
+                      <article class="all-skills__icon ts">
+                        <img src="./assets/images/icons/rojo.svg" alt="typescript" loading="lazy" />
+                      </article>
+                      <p>ROJO</p>
+                    </section>
+                    <section class="all-skills__container">
+                      <article class="all-skills__icon react">
+                        <img src="./assets/images/icons/vscode.svg" alt="react" loading="lazy" />
+                      </article>
+                      <p>VSCode</p>
+                    </section>
+                  </section>
+                </section>
+              </article>
+
+              <article class="projects__project project__your-project projects__your-project hidden fromLeft">
+                <article class="projects__laptop-mockup">
+                  <video disableRemotePlayback muted autoplay playsinline>
+                    <source
+                      src="./assets/videos/studio.mp4"
+                      type="video/webm"
+                      onerror="fallback(parentNode);
+                  function fallback(video) {;
+                    while (video.hasChildNodes()) {
+                      if (video.firstChild instanceof HTMLSourceElement) video.removeChild(video.firstChild);
+                      else video.parentNode.insertBefore(video.firstChild, video);
+                    }
+                    video.parentNode.removeChild(video);
+                  }"
+                    />
+                    <img src="./assets/videos/your-ios.png" alt="your project" loading="lazy" />
+                  </video>
+                </article>
+
+                <section class="projects__info projects__info--project">
+                  <h3 class="projects__title">YOUR PROJECT</h3>
+                  <p class="projects__paragraph">
+                    Are you looking for a dedicated and skilled professional to join your team or help with your next
+                    project? Look no further!
+                  </p>
+                </section>
+              </article>
+              <!-- <button class="button button--secondary projects__view-all">View All Projects</button> -->
+            </section>
+          </div>
+        </div>
+
+        <div class="container-skills">
+          <div class="wrapper">
+            <section class="skills" id="skills">
+              <h2 class="skills__heading">Skills</h2>
+
+              <section class="all-skills">
+                <article class="all-skills__skill all-skills__skill--frontend hidden fromRight">
+                  <header class="all-skills__header">
+                    <h3>Frontend</h3>
+                  </header>
+                  <section class="all-skills__icons">
+                    <section class="all-skills__container">
+                      <article class="all-skills__icon express">
+                        <img src="./assets/images/icons/uisystems.png" alt="express" loading="lazy" />
+                      </article>
+                      <p>UI Systems</p>
+                    </section>
+                    <section class="all-skills__container">
+                      <article class="all-skills__icon css">
+                        <img src="./assets/images/icons/uidesign.png" alt="css" loading="lazy" />
+                      </article>
+                      <p>UI Design</p>
+                    </section>
+                    <section class="all-skills__container">
+                      <article class="all-skills__icon js">
+                        <img src="./assets/images/icons/uianimations.png" alt="javascript" loading="lazy" />
+                      </article>
+                      <p>UI Animation</p>
+                    </section>
+                    <section class="all-skills__container">
+                      <article class="all-skills__icon express">
+                        <img src="./assets/images/icons/crossplatui.svg" alt="express" loading="lazy" />
+                      </article>
+                      <p>Cross-Platform UI</p>
+                    </section>
+                  </section>
+                </article>
+                <article class="all-skills__skill all-skills__skill--backend hidden fromRight">
+                  <header>
+                    <h3>Backend</h3>
+                  </header>
+                  <section class="all-skills__icons">
+                    <section class="all-skills__container">
+                      <article class="all-skills__icon jest">
+                        <img src="./assets/images/icons/brain.svg" alt="jest" loading="lazy" />
+                      </article>
+                      <p>Professional Backend Logic</p>
+                    </section>
+                    <section class="all-skills__container">
+                      <article class="all-skills__icon js">
+                        <img src="./assets/images/icons/logic.png" alt="javascript" loading="lazy" />
+                      </article>
+                      <p>Procedural Logic & Generation</p>
+                    </section>
+                    <section class="all-skills__container">
+                      <article class="all-skills__icon mysql">
+                        <img src="./assets/images/icons/database.svg" alt="mysql" loading="lazy" />
+                      </article>
+                      <p>Databases & Data Systems</p>
+                    </section>
+                    <section class="all-skills__container">
+                      <article class="all-skills__icon mongodb">
+                        <img src="./assets/images/icons/security.png" alt="mongodb" loading="lazy" />
+                      </article>
+                      <p>Security & Validation</p>
+                    </section>
+                    <section class="all-skills__container">
+                      <article class="all-skills__icon express">
+                        <img src="./assets/images/icons/modularity.svg" alt="express" loading="lazy" />
+                      </article>
+                      <p>Scalability & Modularity</p>
+                    </section>
+                    <section class="all-skills__container">
+                      <article class="all-skills__icon api">
+                        <img src="./assets/images/icons/optimization.png" alt="api" loading="lazy" />
+                      </article>
+                      <p>Performance & Optimization</p>
+                    </section>
+                  </section>
+                </article>
+                <article class="all-skills__skill all-skills__skill--other hidden fromRight">
+                  <header>
+                    <h3>Other</h3>
+                  </header>
+                  <section class="all-skills__icons">
+                    <section class="all-skills__container">
+                      <article class="all-skills__icon git">
+                        <img src="./assets/images/icons/rojo.svg" alt="git" loading="lazy" />
+                      </article>
+                      <p>Rojo</p>
+                    </section>
+                    <section class="all-skills__container">
+                      <article class="all-skills__icon css">
+                        <img src="./assets/images/icons/vscode.svg" alt="css" loading="lazy" />
+                      </article>
+                      <p>VSCode</p>
+                    </section>
+                    <section class="all-skills__container">
+                      <article class="all-skills__icon github">
+                        <img src="./assets/images/icons/networker.svg" alt="github" loading="lazy" />
+                      </article>
+                      <p>Networking</p>
+                    </section>
+                    <section class="all-skills__container">
+                      <article class="all-skills__icon js">
+                        <img src="./assets/images/icons/framework.svg" alt="javascript" loading="lazy" />
+                      </article>
+                      <p>Frameworks</p>
+                    </section>
+                    <section class="all-skills__container">
+                      <article class="all-skills__icon express">
+                        <img src="./assets/images/icons/github.svg" alt="express" loading="lazy" />
+                      </article>
+                      <p>Github</p>
+                    </section>
+                  </section>
+                </article>
+              </section>
+            </section>
+          </div>
+        </div>
+
+        <div class="container-contact">
+          <div class="wrapper">
+            <section class="contact hidden" id="contact">
+              <form class="contact__form" id="sendForm">
+                
+                <aside id="form__info" class="hide">
+                  <p id="form__popup-txt">Email successfully sent!</p>
+                </aside>
+              </form>
+            </section>
+          </div>
+        </div>
+      </main>
+
+      <script src="https://kit.fontawesome.com/8bb946769b.js" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    </div>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
